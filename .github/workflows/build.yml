@@ -20,7 +20,7 @@ jobs:
         uses: Phoscur/QMK-compile@v1
         with:
           keyboard: "tokyokeyboard/tokyo60"
-          keymap: "gatsby2"
+          keymap: "gatsby"
           layout_src: "gatsby"
           fork: junyi-hou/qmk_frimware
           branch: gatsby
