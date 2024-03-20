@@ -17,14 +17,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build
-        uses: d3adb5/build-qmk-fw@v1
+        uses: Phoscur/QMK-compile@v1
         with:
           keyboard: "tokyokeyboard/tokyo60"
-          keymap: "default"
-          # local-keymap-path: "gatsby"
+          keymap: "gatsby2"
+          layout_src: "gatsby"
+          fork: junyi-hou/qmk_frimware
+          branch: gatsby
 
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: built-images
-          path: qmk-output
+          path: artifacts
