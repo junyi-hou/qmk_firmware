@@ -17,9 +17,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build
-        uses: justgook/qmk-build@v1
+        uses: d3adb5/build-qmk-fw@v1
         with:
-          keymap-path: "keyboards/tokyokeyboard/tokyo60/keymaps/gatsby"
           keyboard: "tokyokeyboard/tokyo60"
           keymap: "gatsby"
 
