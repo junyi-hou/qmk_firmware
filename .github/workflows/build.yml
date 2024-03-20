@@ -1,0 +1,30 @@
+name: build my custom tokyo60 HHKB framework
+on:
+  push:
+    branches:
+      - gatsby
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        uses: justgook/qmk-build@v1
+        with:
+          keymap-path: "keyboards/tokyokeyboard/tokyo60/keymaps/gatsby"
+          keyboard: "keyboards/tokyokeyboard/tokyo60"
+          keymap: "gatsby"
+
+      - name: Upload
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: fireware
+          path: build

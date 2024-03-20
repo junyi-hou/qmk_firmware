@@ -5,3 +5,5 @@
 
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
+
+#define HOLD_ON_OTHER_KEY_PRESS
