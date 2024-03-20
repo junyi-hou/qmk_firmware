@@ -20,8 +20,8 @@ jobs:
         uses: d3adb5/build-qmk-fw@v1
         with:
           keyboard: "tokyokeyboard/tokyo60"
-          keymap: "gatsby"
-          local-keymap-path: "gatsby"
+          keymap: "default"
+          # local-keymap-path: "gatsby"
 
       - name: Upload
         uses: actions/upload-artifact@v4
