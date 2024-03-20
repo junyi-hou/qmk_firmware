@@ -20,7 +20,7 @@ jobs:
         uses: justgook/qmk-build@v1
         with:
           keymap-path: "keyboards/tokyokeyboard/tokyo60/keymaps/gatsby"
-          keyboard: "keyboards/tokyokeyboard/tokyo60"
+          keyboard: "tokyokeyboard/tokyo60"
           keymap: "gatsby"
 
       - name: Upload
